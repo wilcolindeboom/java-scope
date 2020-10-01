@@ -2,6 +2,8 @@ package nl.novi.javaprogrammeren.one;
 
 public class Person {
 
+    private int age;
+
     private String name;
 
     public Person(String name) {
@@ -9,6 +11,14 @@ public class Person {
     }
 
     public void setAge(int age) {
-        age = age;
+        this.age = age;
+    }
+
+    public void ageOneYear() {
+        this.age++;
+    }
+
+    public int getAge() {
+        return this.age;
     }
 }
